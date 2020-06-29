@@ -1,0 +1,30 @@
+if ( isset( $_POST["enviar"] ) ) {  
+        
+        $nombre = $_POST["nombre"];
+        $apellidoPaterno = $_POST["apellidoPaterno"];
+        $apellidoMaterno = $_POST["apellidoMaterno"];
+        $numeroTelefonico = $_POST["numeroTelefonico"];
+        $codigoPostal = $_POST["codigoPostal"];
+        $correoElectronico = $_POST["correoElectronico"];       
+
+        if ( strcmp( $_POST["contrasena"], $_POST["confirmarContrasena"] ) == 0 ) {
+            if ( strlen( $_POST["contrasena"] ) >= 8 ) {
+
+                $contrasena = $_POST["contrasena"];
+                $confirmarContrasena = $_POST["confirmarContrasena"];
+
+                include("RegistrarAgente.php");
+                 
+                registra( $nombre, $apellidoPaterno, $apellidoMaterno, $numeroTelefonico, $codigoPostal,
+                        $correoElectronico, $contrasena, $confirmarContrasena );
+            } 
+            
+            else{
+                echo "<script>alert('Contraseñas pequeña')</script>";
+            }
+        }
+
+        else{
+            echo "<script>alert('Contraseñas no se parecen')</script>";
+        }
+    }

@@ -1,0 +1,44 @@
+header{
+    background: whitesmoke;    
+}
+
+img{
+    display:block;
+    margin:auto;
+    }
+
+article {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+    margin: 50px auto;
+    border: 2px solid rgb(10, 136, 240);
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgb(10, 136, 240);
+    color: rgb(10, 136, 240);
+    text-align: center;
+    width: 70%;
+     }
+     
+#mapa {
+    padding: 0;
+    margin-bottom: 20px;
+    height: 400px;
+     }
+     
+#parar {
+    display: block;
+    margin: 20px auto 30px;
+    width: 100px;
+    border: 2px solid rgb(10, 136, 240);
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgb(10, 136, 240);
+    color: rgb(10, 136, 240);
+     }
+     
+#parar:hover {
+    border: 2px solid #2E5E90;
+    box-shadow: 0 0 4px #2E5E90;
+    color: #2E5E90;
+     }
